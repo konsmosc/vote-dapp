@@ -21,31 +21,25 @@ This repository has been tested with:
 2. Clone this repository:
 
 ```bash
-git clone https://github.com/konsmosc/vote-dapp.git
+    git clone https://github.com/konsmosc/vote-dapp.git
 ```
 
 3. Navigate to the vote-dapp directory:
 
 ```bash
-cd vote-dapp/
+    cd vote-dapp/
 ```
 
 4. Install globally *http-server* module:
 
 ```bash
-npm install http-server -g
+    npm install http-server -g
 ```
 
 5. Run http-server with:
 
 ```bash
-npm start
-```
-
-or with:
-
-```bash
-http-server
+    npm start
 ```
 
 6. Navigate to the [http://localhost:8080/](http://localhost:8080/) to access the vote-dapp user interface
