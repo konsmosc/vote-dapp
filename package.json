@@ -1,0 +1,17 @@
+{
+  "name": "vote-dapp",
+  "version": "1.0.0",
+  "description": "A decentralized application for e-Voting",
+  "main": "js/index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "keywords": [
+    "dapp",
+    "voting",
+    "solidity",
+    "ethereum"
+  ],
+  "author": "Kostas Moschou",
+  "license": "MIT"
+}
