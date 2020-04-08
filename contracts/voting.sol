@@ -43,13 +43,8 @@ contract Voting {
         }
         return false;
     }
-<<<<<<< HEAD
 
-	function candidates() public view returns (bytes32[] memory) {
-=======
-	
     function candidates() public view returns (bytes32[] memory) {
->>>>>>> 3439a5c151fab319603f0b86094a1433de3c1b7b
         bytes32[] memory list = new bytes32[](candidateList.length);
         for(uint i = 0; i < candidateList.length; i++){
             list[i] = candidateList[i];
