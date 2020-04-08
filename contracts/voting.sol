@@ -7,7 +7,7 @@ contract Voting {
     bytes32[] public candidateList;
     mapping (address => bool) private voters;
     string public votetitle;
-    
+
     modifier onlyOwner(){
         require(msg.sender == owner,"Only owner can call this function.");
         _;
@@ -25,7 +25,7 @@ contract Voting {
         votesReceived[candidate] += 1;
         voters[msg.sender] = true;
     }
-    
+
     function changeTitle(string memory title) public onlyOwner {
         votetitle = title;
     }
@@ -43,10 +43,10 @@ contract Voting {
         }
         return false;
     }
-	
+
 	function candidates() public view returns (bytes32[] memory) {
         bytes32[] memory list = new bytes32[](candidateList.length);
-        for(uint i=0; i< candidateList.length; i++){
+        for(uint i = 0; i < candidateList.length; i++){
             list[i] = candidateList[i];
         }
         return list;
